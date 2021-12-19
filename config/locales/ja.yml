@@ -1,0 +1,28 @@
+ja:
+  activerecord:
+    models:
+      book:
+        one: "本"
+        other: "本"
+    attributes:
+      book:
+        title: "タイトル"
+        memo: "メモ"
+        author: "作家"
+        picture: "画像"
+  books:
+    new:
+      title: "新しい本"
+    show:
+      button: "表示"
+    edit:
+      title: "編集"
+      button: "編集"
+    destroy:
+      button: "削除"
+    button_back: "戻る"
+    confirm_message: "本気ですか？"
+  layouts:
+    application:
+      english: "英語"
+      japanese: "日本語"
