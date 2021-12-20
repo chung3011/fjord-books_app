@@ -9,3 +9,12 @@ en:
         memo: Memo  #g
         picture: Picture  #g
         title: Title  #g
+      user:
+        email: Email
+        address: Address
+        postal_code: Postal code
+        bio: Introduction
+        password: Password
+        password_confirmation: Password confirmation
+        remember_me: Remember me
+        current_password: Current password
