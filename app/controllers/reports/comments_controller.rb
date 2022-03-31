@@ -3,11 +3,14 @@
 class Reports::CommentsController < ApplicationController
   def create
     report = Report.find(params[:report_id])
-    comment = report.comments.build(comment_params)
-    comment.user = current_user
+    @comment = report.comments.build(comment_params)
+    @comment.user = current_user
 
-    comment.save!
-    redirect_to report
+    if @comment.save!
+      redirect_to report
+    else
+      render 'shared/_comment_error'
+    end
   end
 
   private
