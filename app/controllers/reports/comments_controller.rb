@@ -6,7 +6,7 @@ class Reports::CommentsController < ApplicationController
     @comment = report.comments.build(comment_params)
     @comment.user = current_user
 
-    if @comment.save!
+    if @comment.save
       redirect_to report
     else
       render 'shared/_comment_error'

@@ -6,7 +6,7 @@ class Books::CommentsController < ApplicationController
     @comment = book.comments.build(comment_params)
     @comment.user = current_user
 
-    if @comment.save!
+    if @comment.save
       redirect_to book
     else
       render 'shared/_comment_error'
